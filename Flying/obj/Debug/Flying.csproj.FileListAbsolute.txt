@@ -1,0 +1,10 @@
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\bin\Debug\Flying.exe.config
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\bin\Debug\Flying.exe
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\bin\Debug\Flying.pdb
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\obj\Debug\Flying.csproj.AssemblyReference.cache
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\obj\Debug\Flying.Form1.resources
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\obj\Debug\Flying.Properties.Resources.resources
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\obj\Debug\Flying.csproj.GenerateResource.cache
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\obj\Debug\Flying.csproj.CoreCompileInputs.cache
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\obj\Debug\Flying.exe
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\Flying\obj\Debug\Flying.pdb
