@@ -341,6 +341,9 @@
     <Compile Include="TicketList.Designer.cs">
       <DependentUpon>TicketList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CheckinForm.resx">
+      <DependentUpon>CheckinForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlyingForm.resx">
       <DependentUpon>FlyingForm.cs</DependentUpon>
     </EmbeddedResource>
