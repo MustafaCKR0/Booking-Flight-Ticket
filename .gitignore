@@ -9,3 +9,9 @@
 *.vsidx
 *.vsidx
 *.vsidx
+/.vs
+/.vs/VisualProraminProject
+/.vs/VisualProraminProject/v17
+.vs/VisualProraminProject/v17/.suo
+/.vs
+/OnlineFlightBooking/obj
