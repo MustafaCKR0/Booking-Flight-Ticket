@@ -65,8 +65,7 @@ namespace OnlineFlightBooking
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ChooseSeatForm chooseSeatForm = new ChooseSeatForm();
-            chooseSeatForm.ShowDialog();
+           
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -77,8 +76,7 @@ namespace OnlineFlightBooking
             }
             else
             {
-                ChooseSeatForm chooseSeatForm = new ChooseSeatForm();
-                chooseSeatForm.ShowDialog();
+               
             }
         }
     }
