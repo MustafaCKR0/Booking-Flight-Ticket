@@ -69,6 +69,7 @@
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.sidebarContainer.SuspendLayout();
             this.placeContainer.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -712,6 +713,10 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
             // FlyingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -790,5 +795,6 @@
         private System.Windows.Forms.Timer dateTransition;
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PrintDialog printDialog1;
     }
 }
