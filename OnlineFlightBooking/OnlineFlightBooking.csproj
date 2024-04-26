@@ -329,6 +329,18 @@
     <Compile Include="ReservationForm.Designer.cs">
       <DependentUpon>ReservationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchCityOrAirport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchCityOrAirport.Designer.cs">
+      <DependentUpon>SearchCityOrAirport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicketList.Designer.cs">
+      <DependentUpon>TicketList.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FlyingForm.resx">
       <DependentUpon>FlyingForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,6 +354,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SearchCityOrAirport.resx">
+      <DependentUpon>SearchCityOrAirport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketList.resx">
+      <DependentUpon>TicketList.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -373,6 +391,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minusIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flightlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dotIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

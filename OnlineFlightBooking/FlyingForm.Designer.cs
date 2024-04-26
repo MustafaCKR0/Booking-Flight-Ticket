@@ -64,10 +64,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.placeTransition = new System.Windows.Forms.Timer(this.components);
             this.dateTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebarContainer.SuspendLayout();
             this.placeContainer.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -678,17 +679,6 @@
             this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kryptonTextBox2.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OnlineFlightBooking.Properties.Resources.filterIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(291, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 29);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // placeTransition
             // 
             this.placeTransition.Interval = 10;
@@ -704,12 +694,31 @@
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(324, 66);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(632, 385);
+            this.panel6.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OnlineFlightBooking.Properties.Resources.filterIcon;
+            this.pictureBox1.Location = new System.Drawing.Point(291, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // FlyingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1008, 561);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sidebarContainer);
             this.Controls.Add(this.label1);
@@ -780,5 +789,6 @@
         private System.Windows.Forms.FlowLayoutPanel dateContainer;
         private System.Windows.Forms.Timer dateTransition;
         private System.Windows.Forms.Timer sidebarTransition;
+        private System.Windows.Forms.Panel panel6;
     }
 }
