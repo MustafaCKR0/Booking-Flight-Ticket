@@ -16,7 +16,15 @@ namespace OnlineFlightBooking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< Updated upstream
             Application.Run(new MainPageForm());
+=======
+<<<<<<< Updated upstream
+            Application.Run(new FlyingForm());
+=======
+            Application.Run(new CheckinForm());
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         }
     }
 }

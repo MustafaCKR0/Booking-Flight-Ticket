@@ -35,6 +35,38 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+=======
+    <Reference Include="System.Messaging" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +83,12 @@
     </Compile>
     <Compile Include="CheckinForm.Designer.cs">
       <DependentUpon>CheckinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseSeatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseSeatForm.Designer.cs">
+      <DependentUpon>ChooseSeatForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FlyingForm.cs">
       <SubType>Form</SubType>
@@ -90,6 +128,20 @@
     <Compile Include="ReservationForm.Designer.cs">
       <DependentUpon>ReservationForm.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+    <EmbeddedResource Include="FlyingForm.resx">
+      <DependentUpon>FlyingForm.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="CheckinForm.resx">
+      <DependentUpon>CheckinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseSeatForm.resx">
+      <DependentUpon>ChooseSeatForm.cs</DependentUpon>
+>>>>>>> Stashed changes
+    </EmbeddedResource>
+>>>>>>> Stashed changes
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
