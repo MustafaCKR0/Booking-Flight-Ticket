@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\bin\Debug\OnlineFlightBooking.exe.config
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\bin\Debug\OnlineFlightBooking.exe
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\bin\Debug\OnlineFlightBooking.pdb
@@ -151,17 +150,3 @@ C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\bin\Deb
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\bin\Debug\System.ValueTuple.xml
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.csproj.SuggestedBindingRedirects.cache
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.exe.config
-=======
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\bin\Debug\OnlineFlightBooking.exe.config
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\bin\Debug\OnlineFlightBooking.exe
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\bin\Debug\OnlineFlightBooking.pdb
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.csproj.AssemblyReference.cache
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.csproj.SuggestedBindingRedirects.cache
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.CheckinForm.resources
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.Properties.Resources.resources
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.csproj.GenerateResource.cache
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.csproj.CoreCompileInputs.cache
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.exe
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.pdb
-C:\.net core\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.ChooseSeatForm.resources
->>>>>>> Stashed changes
