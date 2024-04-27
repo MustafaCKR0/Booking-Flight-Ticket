@@ -1,5 +1,4 @@
-﻿using ComponentFactory.Krypton.Toolkit;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +10,7 @@ using System.Windows.Forms;
 
 namespace OnlineFlightBooking
 {
-    public partial class CheckinForm : KryptonForm
+    public partial class CheckinForm : Form
     {
         public CheckinForm()
         {
@@ -44,37 +43,22 @@ namespace OnlineFlightBooking
 
             for (int i = 0; i < 10; i++)
             {
-
-                flightPanel2.Controls.Add(this.label12);
-                flightPanel2.Controls.Add(this.label7);
-                flightPanel2.Controls.Add(this.label11);
-                flightPanel2.Controls.Add(this.label10);
-                flightPanel2.Controls.Add(this.label6);
-                flightPanel2.Controls.Add(this.label8);
-                flightPanel2.Controls.Add(this.label9);
-                flightPanel2.Controls.Add(this.kryptonButton5);
-                flightPanel2.Location = new System.Drawing.Point(0, 0+i*102);
-                flightPanel2.Margin = new System.Windows.Forms.Padding(0);
+                flightPanel2.Controls.Clear();
+                flightPanel2.Controls.Add(label11);
+                flightPanel2.Controls.Add(label10);
+                flightPanel2.Controls.Add(button4);
+                flightPanel2.Controls.Add(label9);
+                flightPanel2.Controls.Add(label8);
+                flightPanel2.Controls.Add(label7);
+                flightPanel2.Controls.Add(label6);
+                flightPanel2.Controls.Add(label5);
+                flightPanel2.Controls.Add(pictureBox3);
+                flightPanel2.Controls.Add(pictureBox2);
+                flightPanel2.Controls.Add(pictureBox1);
+                flightPanel2.Location = new System.Drawing.Point(3, 16+i*125);
+                flightPanel2.Size = new System.Drawing.Size(859, 123);
                 flightPanel2.Name = $"flightPanel{i + 1}";
-                flightPanel2.Size = new System.Drawing.Size(285, 100);
-                flightPanel2.TabIndex = 12;
-
-                //flightPanel2.Controls.Clear();
-                //flightPanel2.Controls.Add(label11);
-                //flightPanel2.Controls.Add(label10);
-                //flightPanel2.Controls.Add(button4);
-                //flightPanel2.Controls.Add(label9);
-                //flightPanel2.Controls.Add(label8);
-                //flightPanel2.Controls.Add(label7);
-                //flightPanel2.Controls.Add(label6);
-                //flightPanel2.Controls.Add(label5);
-                //flightPanel2.Controls.Add(pictureBox3);
-                //flightPanel2.Controls.Add(pictureBox2);
-                //flightPanel2.Controls.Add(pictureBox1);
-                //flightPanel2.Location = new System.Drawing.Point(3, 16+i*125);
-                //flightPanel2.Size = new System.Drawing.Size(859, 123);
-                //flightPanel2.Name = $"flightPanel{i + 1}";
-                //flightPanel2.TabIndex = i;
+                flightPanel2.TabIndex = i;
                 panel2.Controls.Add(flightPanel2);
             }
         }
@@ -94,11 +78,6 @@ namespace OnlineFlightBooking
             {
                
             }
-        }
-
-        private void kryptonButton5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
