@@ -28,47 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblLuggage = new System.Windows.Forms.Label();
+            this.lblLuggageAmount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblDepartureTime = new System.Windows.Forms.Label();
+            this.lblDepartureLocation = new System.Windows.Forms.Label();
+            this.lblLandingLocation = new System.Windows.Forms.Label();
+            this.lblLandingTime = new System.Windows.Forms.Label();
+            this.lblTravelTime = new System.Windows.Forms.Label();
+            this.lblTravelType = new System.Windows.Forms.Label();
+            this.btnPrice = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureTransfer = new System.Windows.Forms.PictureBox();
+            this.pictureTicketLogo = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureTransfer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureTicketLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // label3
+            // lblLuggage
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(105, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Luggage:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLuggage.AutoSize = true;
+            this.lblLuggage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.lblLuggage.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLuggage.ForeColor = System.Drawing.Color.Black;
+            this.lblLuggage.Location = new System.Drawing.Point(105, 35);
+            this.lblLuggage.Name = "lblLuggage";
+            this.lblLuggage.Size = new System.Drawing.Size(63, 17);
+            this.lblLuggage.TabIndex = 8;
+            this.lblLuggage.Text = "Luggage:";
+            this.lblLuggage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLuggage.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.lblLuggage.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // label1
+            // lblLuggageAmount
             // 
-            this.label1.AutoEllipsis = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(169, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "15 Kg";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLuggageAmount.AutoEllipsis = true;
+            this.lblLuggageAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.lblLuggageAmount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLuggageAmount.ForeColor = System.Drawing.Color.Black;
+            this.lblLuggageAmount.Location = new System.Drawing.Point(169, 35);
+            this.lblLuggageAmount.Name = "lblLuggageAmount";
+            this.lblLuggageAmount.Size = new System.Drawing.Size(69, 17);
+            this.lblLuggageAmount.TabIndex = 9;
+            this.lblLuggageAmount.Text = "15 Kg";
+            this.lblLuggageAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLuggageAmount.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.lblLuggageAmount.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
             // label2
             // 
@@ -79,162 +84,195 @@
             this.label2.Size = new System.Drawing.Size(254, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "--------------------------------------->";
+            this.label2.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.label2.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // label4
+            // lblDepartureTime
             // 
-            this.label4.AutoEllipsis = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(220, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 20);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "15:00";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDepartureTime.AutoEllipsis = true;
+            this.lblDepartureTime.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDepartureTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDepartureTime.Location = new System.Drawing.Point(220, 12);
+            this.lblDepartureTime.Name = "lblDepartureTime";
+            this.lblDepartureTime.Size = new System.Drawing.Size(87, 20);
+            this.lblDepartureTime.TabIndex = 11;
+            this.lblDepartureTime.Text = "15:00";
+            this.lblDepartureTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDepartureTime.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.lblDepartureTime.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // label5
+            // lblDepartureLocation
             // 
-            this.label5.AutoEllipsis = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(220, 60);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 20);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "IST";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDepartureLocation.AutoEllipsis = true;
+            this.lblDepartureLocation.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDepartureLocation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDepartureLocation.Location = new System.Drawing.Point(220, 60);
+            this.lblDepartureLocation.Name = "lblDepartureLocation";
+            this.lblDepartureLocation.Size = new System.Drawing.Size(87, 20);
+            this.lblDepartureLocation.TabIndex = 12;
+            this.lblDepartureLocation.Text = "IST";
+            this.lblDepartureLocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDepartureLocation.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.lblDepartureLocation.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // label6
+            // lblLandingLocation
             // 
-            this.label6.AutoEllipsis = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(409, 62);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 20);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "ABD";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblLandingLocation.AutoEllipsis = true;
+            this.lblLandingLocation.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLandingLocation.Location = new System.Drawing.Point(409, 62);
+            this.lblLandingLocation.Name = "lblLandingLocation";
+            this.lblLandingLocation.Size = new System.Drawing.Size(79, 20);
+            this.lblLandingLocation.TabIndex = 14;
+            this.lblLandingLocation.Text = "ABD";
+            this.lblLandingLocation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblLandingLocation.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.lblLandingLocation.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // label7
+            // lblLandingTime
             // 
-            this.label7.AutoEllipsis = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(405, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 20);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "20:00";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblLandingTime.AutoEllipsis = true;
+            this.lblLandingTime.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLandingTime.Location = new System.Drawing.Point(405, 12);
+            this.lblLandingTime.Name = "lblLandingTime";
+            this.lblLandingTime.Size = new System.Drawing.Size(85, 20);
+            this.lblLandingTime.TabIndex = 13;
+            this.lblLandingTime.Text = "20:00";
+            this.lblLandingTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblLandingTime.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.lblLandingTime.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // label8
+            // lblTravelTime
             // 
-            this.label8.AutoEllipsis = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(297, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 17);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "5 Hour";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTravelTime.AutoEllipsis = true;
+            this.lblTravelTime.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTravelTime.Location = new System.Drawing.Point(297, 13);
+            this.lblTravelTime.Name = "lblTravelTime";
+            this.lblTravelTime.Size = new System.Drawing.Size(117, 17);
+            this.lblTravelTime.TabIndex = 15;
+            this.lblTravelTime.Text = "5 Hour";
+            this.lblTravelTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTravelTime.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.lblTravelTime.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // label9
+            // lblTravelType
             // 
-            this.label9.AutoEllipsis = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(300, 63);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 17);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Direct";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTravelType.AutoEllipsis = true;
+            this.lblTravelType.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTravelType.Location = new System.Drawing.Point(300, 63);
+            this.lblTravelType.Name = "lblTravelType";
+            this.lblTravelType.Size = new System.Drawing.Size(114, 17);
+            this.lblTravelType.TabIndex = 16;
+            this.lblTravelType.Text = "Direct";
+            this.lblTravelType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTravelType.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.lblTravelType.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // kryptonButton5
+            // btnPrice
             // 
-            this.kryptonButton5.Location = new System.Drawing.Point(496, 7);
-            this.kryptonButton5.Name = "kryptonButton5";
-            this.kryptonButton5.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButton5.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButton5.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
-            this.kryptonButton5.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
-            this.kryptonButton5.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnPrice.Location = new System.Drawing.Point(496, 7);
+            this.btnPrice.Name = "btnPrice";
+            this.btnPrice.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnPrice.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnPrice.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
+            this.btnPrice.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
+            this.btnPrice.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton5.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton5.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton5.Size = new System.Drawing.Size(133, 77);
-            this.kryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButton5.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
-            this.kryptonButton5.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
-            this.kryptonButton5.StateCommon.Border.ColorAngle = 45F;
-            this.kryptonButton5.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnPrice.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrice.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrice.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnPrice.Size = new System.Drawing.Size(133, 77);
+            this.btnPrice.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnPrice.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnPrice.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
+            this.btnPrice.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
+            this.btnPrice.StateCommon.Border.ColorAngle = 45F;
+            this.btnPrice.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton5.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonButton5.StateCommon.Border.Rounding = 20;
-            this.kryptonButton5.StateCommon.Border.Width = 3;
-            this.kryptonButton5.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
-            this.kryptonButton5.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
-            this.kryptonButton5.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton5.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton5.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButton5.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.kryptonButton5.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
-            this.kryptonButton5.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
-            this.kryptonButton5.StateNormal.Border.ColorAngle = 45F;
-            this.kryptonButton5.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnPrice.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnPrice.StateCommon.Border.Rounding = 20;
+            this.btnPrice.StateCommon.Border.Width = 3;
+            this.btnPrice.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
+            this.btnPrice.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
+            this.btnPrice.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrice.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrice.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnPrice.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.btnPrice.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
+            this.btnPrice.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(126)))), ((int)(((byte)(180)))));
+            this.btnPrice.StateNormal.Border.ColorAngle = 45F;
+            this.btnPrice.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton5.StateNormal.Border.Rounding = 20;
-            this.kryptonButton5.StateNormal.Border.Width = 3;
-            this.kryptonButton5.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton5.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton5.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton5.TabIndex = 19;
-            this.kryptonButton5.Values.Text = "2.476 TL";
+            this.btnPrice.StateNormal.Border.Rounding = 20;
+            this.btnPrice.StateNormal.Border.Width = 3;
+            this.btnPrice.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrice.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrice.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPrice.TabIndex = 19;
+            this.btnPrice.Values.Text = "2.476 TL";
+            this.btnPrice.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.btnPrice.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // pictureBox2
+            // pictureTransfer
             // 
-            this.pictureBox2.Image = global::OnlineFlightBooking.Properties.Resources.dotIcon;
-            this.pictureBox2.Location = new System.Drawing.Point(337, 36);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 20);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
+            this.pictureTransfer.Image = global::OnlineFlightBooking.Properties.Resources.dotIcon;
+            this.pictureTransfer.Location = new System.Drawing.Point(337, 36);
+            this.pictureTransfer.Name = "pictureTransfer";
+            this.pictureTransfer.Size = new System.Drawing.Size(37, 20);
+            this.pictureTransfer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureTransfer.TabIndex = 18;
+            this.pictureTransfer.TabStop = false;
+            this.pictureTransfer.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.pictureTransfer.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
-            // pictureBox1
+            // pictureTicketLogo
             // 
-            this.pictureBox1.Image = global::OnlineFlightBooking.Properties.Resources.flightlogo;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureTicketLogo.Image = global::OnlineFlightBooking.Properties.Resources.flightlogo;
+            this.pictureTicketLogo.Location = new System.Drawing.Point(17, 12);
+            this.pictureTicketLogo.Name = "pictureTicketLogo";
+            this.pictureTicketLogo.Size = new System.Drawing.Size(82, 70);
+            this.pictureTicketLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureTicketLogo.TabIndex = 0;
+            this.pictureTicketLogo.TabStop = false;
+            this.pictureTicketLogo.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.pictureTicketLogo.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Location = new System.Drawing.Point(17, 98);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(600, 1);
+            this.panel1.TabIndex = 20;
+            this.panel1.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.panel1.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
             // 
             // TicketList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.Controls.Add(this.kryptonButton5);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnPrice);
+            this.Controls.Add(this.pictureTransfer);
+            this.Controls.Add(this.lblTravelType);
+            this.Controls.Add(this.lblTravelTime);
+            this.Controls.Add(this.lblLandingLocation);
+            this.Controls.Add(this.lblLandingTime);
+            this.Controls.Add(this.lblDepartureLocation);
+            this.Controls.Add(this.lblDepartureTime);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblLuggageAmount);
+            this.Controls.Add(this.lblLuggage);
+            this.Controls.Add(this.pictureTicketLogo);
             this.Name = "TicketList";
-            this.Size = new System.Drawing.Size(632, 99);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(649, 99);
+            this.MouseEnter += new System.EventHandler(this.TicketList_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.TicketList_MouseLeave);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureTransfer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureTicketLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,17 +280,18 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureTicketLogo;
+        private System.Windows.Forms.Label lblLuggage;
+        private System.Windows.Forms.Label lblLuggageAmount;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton5;
+        private System.Windows.Forms.Label lblDepartureTime;
+        private System.Windows.Forms.Label lblDepartureLocation;
+        private System.Windows.Forms.Label lblLandingLocation;
+        private System.Windows.Forms.Label lblLandingTime;
+        private System.Windows.Forms.Label lblTravelTime;
+        private System.Windows.Forms.Label lblTravelType;
+        private System.Windows.Forms.PictureBox pictureTransfer;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnPrice;
+        private System.Windows.Forms.Panel panel1;
     }
 }

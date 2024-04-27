@@ -151,3 +151,6 @@ C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\bin\Deb
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.csproj.SuggestedBindingRedirects.cache
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.exe.config
 C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.TicketList.resources
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.PaymentForm.resources
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.ReservationForm.resources
+C:\Users\Zeno\Documents\GitHub\Booking-Flight-Ticket\OnlineFlightBooking\obj\Debug\OnlineFlightBooking.SearchCityOrAirport.resources
