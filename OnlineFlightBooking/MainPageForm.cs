@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ComponentFactory.Krypton.Toolkit;
 namespace OnlineFlightBooking
 {
-    public partial class MainPageForm : Form
+    public partial class MainPageForm : KryptonForm
     {
         public MainPageForm()
         {
