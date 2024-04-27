@@ -133,6 +133,16 @@ namespace OnlineFlightBooking.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -166,6 +176,16 @@ namespace OnlineFlightBooking.Properties {
         internal static System.Drawing.Bitmap redCircle {
             get {
                 object obj = ResourceManager.GetObject("redCircle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WELCOME___where_do_you_want_to_go {
+            get {
+                object obj = ResourceManager.GetObject("WELCOME , where do you want to go", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
